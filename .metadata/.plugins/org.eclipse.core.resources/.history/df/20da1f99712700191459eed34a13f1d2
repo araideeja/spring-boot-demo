@@ -1,0 +1,11 @@
+package com.example.demo.model;
+
+public class Book {
+	String book;
+	
+	public Book() {
+		
+	}
+	
+	
+}

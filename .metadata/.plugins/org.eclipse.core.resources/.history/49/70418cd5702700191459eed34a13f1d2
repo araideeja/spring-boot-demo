@@ -1,0 +1,19 @@
+package com.example.demo.dao;
+
+import org.springframework.stereotype.Repository;
+
+import com.example.demo.model.Books;
+
+@Repository
+public class BookDAO {
+	Books bookList = new Books();
+	
+	static {
+		booklist
+	}
+	
+	public Books getAllBooks() {
+		return bookList;
+	}
+
+}

@@ -1,0 +1,18 @@
+package com.example.demo.model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Books {
+	List<Book> bookList;
+
+	public List<Book> getBookList() {
+		if(null== bookList) {
+			return new ArrayList<Book>();
+		}
+	}
+
+	public void setBookList(List<Book> bookList) {
+		this.bookList = bookList;
+	}
+}

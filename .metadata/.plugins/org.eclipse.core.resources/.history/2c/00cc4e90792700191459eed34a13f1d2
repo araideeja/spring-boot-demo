@@ -1,0 +1,25 @@
+package com.example.demo.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.demo.dao.BookDAO;
+import com.example.demo.model.Books;
+
+@RestController
+public class BookController {
+	@Autowired
+	private BookDAO bookDao;
+
+	@RequestMapping(method=RequestMethod.GET, path="/books", produces ="application/json")
+	public Books getBooks() {
+		return bookDao.getAllBooks();
+	}
+	
+	@RequestMapping(method=RequestMethod.POST, path="/books", )
+	public Book addBook(Book book) {
+		return bookDao.addBook(book);
+	}
+}

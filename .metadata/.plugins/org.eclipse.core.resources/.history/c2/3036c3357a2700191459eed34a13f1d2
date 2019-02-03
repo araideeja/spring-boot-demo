@@ -1,0 +1,18 @@
+package com.example.demo.model;
+
+public class Book {
+	String name;
+	int id;
+	
+	Book(){
+		
+	}
+	
+	public Book(String name) {
+		this.name = name;
+	}
+
+	public String getName() {
+		return name;
+	}
+}

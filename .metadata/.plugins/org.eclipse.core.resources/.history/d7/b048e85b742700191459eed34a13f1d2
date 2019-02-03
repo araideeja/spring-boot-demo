@@ -1,0 +1,18 @@
+package com.example.demo.model;
+
+public class Book {
+	String name;
+	
+	Book(){
+		
+	}
+	
+	public Book(String name) {
+		this.name = name;
+	}
+	
+	@Override
+	public String toString() {
+		return "Book [name = " + this.name;
+	}
+}
